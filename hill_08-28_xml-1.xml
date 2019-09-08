@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<recipe>
+    <ingredients>
+        <flour type= "white"> <measure unit="cup" amount="1.25">1 1/4 cups (160 grams) white bread flour, plus more for dusting</measure></flour><!--ebb: Good thinking here for categorizing the different kinds of ingredients using elements. Attributes might help here to distinguish among the flour types:
+        <flour type="#1">...white bread flour</flour>
+        <flour type="#2">...whole-wheat flour</flour>
+        This way, you could search for all the flours and distinguish them by type. If you were running a restaurant, you could store a list of information about flour types in a different element at the top or bottom of the document, like so:
+        
+        <meta>
+             <refList ingred="flour">
+                 <flour type="1">white bread flour: purchased from Jim's flour company in bulk</flour>
+                 <flour type="2">stone-ground whole wheat bread flour: purchased from Elli's flour company by the pound</flour>
+             </refList>
+        </meta>
+        I'm just making this up, but to suggest how you can use attributes to point to more detailed information stored elsewhere.
+        -->
+        <flour type="wheat"><measure unit ="cup" amount=".25">1/4 cup (38 grams) stone-ground whole-wheat flour</measure></flour>
+        <flour type="rye"><measure unit="cup" amount=".25">1/4 cup (32 grams) stone-ground whole rye flour</measure></flour>
+        <yeast><measure unit="teaspoon" amount=".5">"1/2 teaspoon instant yeast or bread machine yeast</measure></yeast>
+        <salt><measure unit ="teaspoon" amount="1">1 teaspoon table salt</measure></salt>
+        <cider><measure unit="cup" amount=".25">1/4 cup (55 grams) dry fermented cider (may substitute Pilsener beer; see headnote)</measure></cider>
+        <water><measure unit ="cup" amount =".5">1/2 cup (120 grams) lukewarm water (80 degrees), plus an optional 1 tablespoon</measure></water>
+    </ingredients>
+    <directions>
+        <step n="1">Whisk together the flours, yeast and salt in a mixing bowl.Combine the cider and water in a liquid measuring cup.</step>
+        
+        <step n="2">Add the liquid to the flour mixture; use a spatula or bench scraper or your hand moistened with water to blend them for about a minute. The dough should be shaggy yet cohesive. Cover the bowl with a towel; let the dough rest for 20 minutes.</step>
+        
+        <step n="3">Moisten your kneading hand.If the dough seems stiff, add the optional tablespoon of water. Stretch one edge of the dough (still in the bowl), then press it into the center of the bowl.Repeat this about a dozen times, moving clockwise to catch all sides of the dough. (This should take 1 or 2 minutes.)</step>
+        
+        <step n="4">Turn the dough over so the seams are on the bottom.Cover and let rest for 20 minutes. Repeat the clockwise stretching and folding two more times, with 20-minute rests after each. Cover and refrigerate at least 8 hours and up to 24 hours.The dough should have doubled. If it hasn't, leave it on the counter until it does.
+        
+        </step><step n ="5">Lightly flour a work surface. Use a pastry cloth or clean dish towel to line a round colander. Dust the cloth with flour.</step>
+        
+        <step n="6">Transfer the dough to the floured work surface. Fold the edges toward the center to create a round shape, turning it over so the seams are on the bottom. Let it rest for 5 minutes, then transfer to the colander, seam side up. Cover with a towel and let the dough rise for 1 1/2 hours.</step>
+        
+        <step n="7">Thirty minutes before baking, place a cast-iron Dutch oven (lid on) or enameled cast-iron pot with a lid (on) in the oven; preheat to 475 degrees.</step>
+        
+        <step n="8">Carefully remove the hot pot from the oven.</step>
+        
+        <step n="9">Turn the dough out onto the counter so the seams are on the bottom. Use kitchen scissors to make 8 snips on the top of the dough in an evenly spaced spoke pattern, each about 1/4-inch deep. Lift the dough and carefully drop it into the hot pot. Immediately cover with the hot lid. Bake for 30 minutes, then reduce the heat to 450 degrees. Uncover and bake for 8 to 10 minutes or until the crust is dark brown. Try to minimize the amount of time the oven door is open.</step>
+        
+        <step n="10">The bread is done when its internal temperature registers 205 degrees on an instant-read thermometer and the loaf sounds hollow when knocked on the underside.</step>
+        
+        <step n ="11">Transfer the loaf to a wire rack to cool for at least 1 hour before cutting.</step>
+    </directions>
+</recipe>
+<!-- 2019-09-03 ebb: Check. And welcome to the class! :-) Good work with your first XML assignment, generating well-formed code and getting the "happy green square" in oXygen! You seem to be figuring out attributes as you go here, and that's good: you're using them in just the right way
+with elements in your <step> elements.  You might want to add some markup inside your ingredients and steps lists, to help keep track of quantities (what if you wanted to double or triple this recipe, and wanted the computer to have a list of 
+decimal values to calculate on? How about <liquid type="cider"><measure unit="cup" quantity=".25">1/4 cup  (55 grams)</measure> dry fermented cider</liquid>. Or you could wrap the grams measurements in their own tags to isolate them to help do those calculations:
+ <liquid type="cider">1/4 cup (<calc n="55">55 grams</calc>) dry fermented cider...</liquid>.  Similarly, what about encoding times and temperatures and indicating units and values in attributes? 
+ You don't need to revise this code right now, but when we start the next unit on writing schemas to control your code, you may want to revisit this and add a little more markup. 
+-->
