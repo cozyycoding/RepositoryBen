@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Erlkönig rhymescheme="ABAB" language="German"> 
+    <Title>Erlkönig</Title>
+    <Author name="Goethe">Johann Wolfgang von Goethe</Author>
+    
+    <stanza n="1" speaker = "narrator">
+        <line n="1" syllables ="9">Wer reitet so spät durch Nacht und Wind?</line>
+        <line n="2" syllables ="9">Es ist der Vater mit seinem Kind;</line>
+        <line n="3" syllables="9">Er hat den Knaben wohl in dem Arm,</line>
+        <line n="4" syllables="9">Er faßt ihn sicher, er hält ihn warm.</line>
+    </stanza>
+    
+    <stanza n="2">
+        <line n="5" syllables="10" speaker="child">Mein Sohn, was birgst du so bang dein Gesicht? -</line>
+        <line n="6" syllables="9">Siehst, Vater, du den Erlkönig nicht?</line>
+        <line n="7" syllables="9" speaker ="father">Den Erlenkönig mit Kron und Schweif? -</line>
+        <line n="8" syllables="8">Mein Sohn, es ist ein Nebelstreif. -</line>
+    </stanza>
+    
+    <stanza n="3" speaker ="Erlkönig">    
+        <line n="9" syllables="8">"Du liebes Kind, komm, geh mit mir!</line>
+        <line n="10" syllables="9">Gar schöne Spiele spiel ich mit dir;</line>
+        <line n="11" syllables="9">Manch bunte Blumen sind an dem Strand,</line>
+        <line n="12" syllables="10">Meine Mutter hat manch gülden Gewand."</line>
+    </stanza>
+    
+    <stanza n ="4">    
+        <line n="13" syllables="11" speaker="child">Mein Vater, mein Vater, und hörest du nicht,</line>
+        <line n="14" syllables="10">Was Erlenkönig mir leise verspricht? -</line>
+        <line n="15" syllables="9" speaker ="father">Sei ruhig, bleibe ruhig, mein Kind;</line>
+        <line n="16" syllables="9">In dürren Blättern säuselt der Wind. -</line>
+    </stanza>
+ 
+    <stanza n="5" speaker ="Erlkönig"> 
+        <line n="17" syllables="9">"Willst, feiner Knabe, du mit mir gehn?</line>
+        <line n="18" syllables="10"> Meine Töchter sollen dich warten schön;</line>
+        <line n="19" syllables="11">Meine Töchter führen den nächtlichen Reihn,</line>
+        <line n="20" syllables="11">Und wiegen und tanzen und singen dich ein."</line>
+    </stanza>
+    
+    <stanza n="6">    
+        <line n="21" syllables="11" speaker="child">Mein Vater, mein Vater, und siehst du nicht dort</line>
+        <line n="22" syllables="8">Erlkönigs Töchter am düstern Ort? -</line>
+        <line n="23" syllables="9" speaker ="father">Mein Sohn, mein Sohn, ich seh es genau:</line>
+        <line n="24" syllables="10"> Es scheinen die alten Weiden so grau. -</line>
+    </stanza>
+    
+    <stanza n="7" speaker ="Erlkönig and child">    
+        <line n="25" syllables="12" speaker ="Erlkönig">"Ich liebe dich, mich reizt deine schöne Gestalt;</line>
+        <line n="26" syllables="11">Und bist du nicht willig, so brauch ich Gewalt."</line>
+        <line n="27" syllables="11" speaker ="child">Mein Vater, mein Vater, jetzt faßt er mich an!</line>
+        <line n="28" syllables="9">Erlkönig hat mir ein Leids getan! -</line>
+    </stanza>
+    
+    <stanza n="8" speaker ="narrator">    
+        <line n="29" syllables="10">Dem Vater grausets, er reitet geschwind,</line>
+        <line n="30" syllables="10">Er hält in Armen das ächzende Kind,</line>
+        <line n="31" syllables="9">Erreicht den Hof mit Mühe und Not;</line>
+        <line n="32" syllables="9">In seinen Armen das Kind war tot.</line>
+    </stanza>
+    
+</Erlkönig>

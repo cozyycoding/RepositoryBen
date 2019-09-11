@@ -1,0 +1,23 @@
+datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
+start = recipe
+recipe = element recipe {ingredients, directions}
+
+ingredients = element ingredients {flour1, flour2, flour3, yeast, salt, cider, water}
+flour1 = element flour1 {type, measure, text}
+flour2 = element flour2 {type, measure, text}
+flour3 = element flour3 {type, measure, text}
+yeast = element yeast{measure, text}
+salt = element salt{measure, text}
+cider = element cider {measure, text}
+water = element water {measure, text}
+
+measure = element measure {unit, amount, text*}
+type = attribute type {text}
+unit = attribute unit{text}
+amount = attribute ammount{text}
+
+directions = element directions{step}
+step = element step{n, text}
+n = attribute n{text}
+
+
