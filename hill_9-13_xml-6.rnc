@@ -1,0 +1,32 @@
+datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
+start = recipe
+recipe = element recipe {language, author, totalcooktime, yield, allergies, ingredients, directions}
+language = attribute language{text}
+author = attribute author{text}
+totalcooktime = attribute totalcooktime{text}
+yield = attribute yield{text}
+allergies = attribute allergies{text}
+
+ingredients= element ingredients {maccheese, topping}
+maccheese = element maccheese {macaroni, butter, flour, mustard, milk, onion, bayleaf, paprika, egg, cheddar, salt, pepper}
+macaroni = element macaroni {units, amount, text}
+butter = element butter {units, amount, text}
+flour = element flour {units, amount, text}
+mustard = element mustard {units, amount, text}
+milk = element milk {units, amount ,text}
+onion = element onion {units, amount, text}
+bayleaf = element bayleaf {units, amount, text}
+paprika = element paprika {units, amount, text}
+egg = element egg {units, amount, text}
+cheddar = element cheddar {units, amount, text}
+salt = element salt{units, amount, text}
+pepper = element pepper{text}
+units = attribute units{text}
+amount = attribute amount{text}
+
+topping = element topping {butter, bread}
+bread = element bread {units, amount, text}
+directions = element directions{step*}
+step =element step {n, text}
+n = attribute n{text}
+

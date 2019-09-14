@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hill_9-13_xml-6.rnc" type="application/relax-ng-compact-syntax"?>
 <recipe language ="English" author="Alton Brown" totalcooktime="1 hour 5 minutes" yield="6-8 servings" allergies="lactose">
     <ingredients>
         <maccheese>
@@ -12,7 +13,7 @@
             <paprika units="teaspoon" amount=".5">1/2 teaspoon paprika</paprika>
             <egg units="egg" amount="1">1 large egg</egg>
             <cheddar units="ounces" amount="12">12 ounces sharp cheddar, shredded</cheddar>
-            <salt units="teaspoon" aount="1">1 teaspoon kosher salt</salt>
+            <salt units="teaspoon" amount="1">1 teaspoon kosher salt</salt>
             <pepper>Fresh black pepper</pepper>
         </maccheese>        
         <topping>
