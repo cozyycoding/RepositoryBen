@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="hill_09-11_xml-5.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-stylesheet type="text/css" href="../../../Downloads/hill_09-11_xml-5.rnc"?>
+<?xml-stylesheet type="text/css" href="../../../Downloads/hill_09-11_xml-5.rnc"?>
+<?xml-model href="../../../Downloads/hill_09-11_xml-5.rnc" type="application/relax-ng-compact-syntax"?>
 <sonnets lines ="14" rhymescheme="ABABCDCDEFEFGG" language ="English" author ="William Shakespeare">
     <sonnet n = "1">
         <line n="1">FROM fairest creatures we desire increase,</line>

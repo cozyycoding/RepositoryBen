@@ -1,0 +1,67 @@
+# RELAX NG TEST INSTRUCTIONS:  
+# * Save these test files according to our standard file naming conventions for Courseweb submissions.
+# * Make the schema well-formed and document with  # comments where you made change(s). 
+# * Then, associate the schema with the XML file we have provided for the exam.
+# * Next, correct the schema code so that it validates the XML (happy green oXygen for both documents) and document briefly with # comments what you changed and why.
+#     **NOTE**: DO NOT CHANGE the markup in the XML file (except for adding your new schema line)! 
+# * And finally, write and answer the question about datatypes (at the end of the schema) in a comment.
+#
+# TIPS: 
+# There are 9 critical errors in this Relax-NG schema that will make oXygen's error-checking box RED. Your goal is to correct each of these errors.
+# (You only see one red box on both files to start because it is the first error that causes the RNG file not to be well-formed. 
+# Fix that first error on your new schema and others will become evident. 
+# When you correct the schema file so it "turns green", associate your new schema with the XML (and remove the original schema line). At that point the other validation errors will become evident in the XML file.)
+# Remember to split your oXygen screen (Window -> Tile Editors Vertically), and use the outline view on the XML document to see where tags sit in the document's hierarchy. (If you don't immediately see this, click on the XML file, then go to  Window -> Show View -> Outline).
+#
+# **NOTE**: Because this is an EXAM, you are expected to complete this assignment _individually_ 
+# without discussion or help from other students. Any such collaboration will be considered to be PLAGIARISM under the penalties stated on the syllabus.
+# *  GITHUB: While you may ask basic questions on the DHClass-Hub, as with in-class exams, our responses will
+# be correspondingly minimal: that is, we will not be telling you the complete answers. Similarly, for any
+# questions about take-home exams on GitHub, STUDENTS _must not_ reply to each other.
+#
+# SUBMITTING YOUR EXAM:
+# When you are finished, upload BOTH the schema and the XML file to Courseweb using the posted upload point for this exam.
+# NOTE: Be sure you have used our usual Courseweb file naming convention for homeworks to submit this test: 
+# for example, beshero_RNGTest_2019.rnc and beshero_RNGTest_2019.xml, and be sure your schema line on the XML matches the name of the schema file you are submitting.
+
+datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
+start = xml
+xml = element xml {docInfo, body}
+docInfo = element docInfo {title, subtitle, author, publication, pubDate, copyright}
+title = element title {text}
+subtitle = element subtitle {text}
+author = element author {id, text}
+id = attribute id {xsd:ID}
+publication = element publication {type, target, text}
+type = attribute type {"digital" | "print" | "person" | "medical" | "legal" | "inverse"}
+target = attribute target {xsd:anyURI}
+pubDate = element pubDate {when}
+when = attribute when {xsd:date | xsd:integer | xsd:string} # Hint: For full credit, do not change this to text. The best answer is a datatype.
+copyright = element copyright {text}
+body = element body {(p, sectionHead?)+}
+sectionHead = element sectionHead {text}
+p = element p {(quote | duration | persName | orgName | event | codeSpec | rs | date | catchPhrase | docFormat | docGenre | software | text)*}
+quote = element quote {source, text}
+source = attribute source {text}
+duration = element duration {quantity, unit, text?}
+quantity = attribute quantity {xsd:decimal}
+unit = attribute unit {"year" | "month" | "day" | "inverse"}
+persName = element persName {ref?, text}
+orgName = element orgName {ref?, text}
+ref = attribute ref {xsd:IDREF}
+event = element event {when?, mixed{(date | codeSpec | software)*}}
+date = element date {when, text}
+codeSpec = element codeSpec {text}
+software = element software {text}
+rs = element rs {type, ref, text}
+catchPhrase = element catchPhrase {type?, text}
+docFormat = element docFormat {text}
+docGenre = element docGenre {type, text}
+
+# In this schema we applied a pair of datatypes to related attribute values: The datatypes are xsd:ID and xsd:IDREF. 
+# Explain in your own words how these datatypes are working together in this document. 
+# What happens if you (for experiment) change one of the attribute values holding either of these datatypes, and why does that happen? 
+# YOUR NAME AND ANSWER HERE:  
+
+
+

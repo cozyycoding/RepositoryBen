@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--2019-01-30 ebb: EXAM FILE. 
+    The schema association line below points to the original exam's Relax NG file. 
+    Download both the XML and the Relax NG to save in your own space, and rename according to our filenaming conventions. 
+    You should comment out the line below and **reassociate** this XML with your own renamed schema file to check and make sure you are correcting its mistakes. 
+    You'll be submitting your new schema file and this XML file on Courseweb. -->
+<?xml-model href="RNGtest2019.rnc" type="application/relax-ng-compact-syntax"?>
+<xml>
+    <docInfo>
+        <title>XML is 20</title>
+        <subtitle>Tim Bray on XML's 20th birthday</subtitle>
+        <author id="Bray_Tim">Tim Bray</author>
+        <publication type="digital" target="https://www.xml.com/articles/2018/02/10/xml-20/"
+            >XML.com</publication>
+        <pubDate when="2018-02-10"/>
+        <copyright>Article contents © 2018 Tim Bray</copyright>
+    </docInfo>
+    <body>
+        <p><quote source="Beatles">“It was twenty years ago today/Sergeant Pepper taught the band to
+                play…</quote>. Actually, it was <duration quantity="21.5" unit="year">21½ years ago
+                today</duration> that <persName>Jon Bosak</persName> pulled together the original
+                <orgName>XML Working Group</orgName>. But yes, it was <event>on <date
+                    when="1998-02-10">February 10, 1998</date> that <codeSpec>XML 1.0</codeSpec> was
+                released to the world</event>. Which is worth talking about.</p>
+        <p>It turns out that if you follow the pointers back, the original <codeSpec>XML 1.0
+                Specification</codeSpec> is still out there; <rs type="person" ref="Bray_Tim">my
+                fingers</rs> were the last to touch that document. The history of how XML came to be
+            has been told at great length elsewhere, as have the details about <date
+                when="1998-02-10">that February 10th</date>, so there’s no need to revisit.</p>
+        <sectionHead>What matters?</sectionHead>
+        <p><date when="2018">Twenty years later</date>, it seems obvious that the most important
+            thing about <codeSpec>XML</codeSpec> is that it was the first. The first data format
+            that anyone could pack anything up into, send across the network to anywhere, and unpack
+            on the other end, without asking anyone’s permission or paying for software, or for the
+            receiver to have to pay attention to what the producer thought they’d produced it for or
+            what it meant.</p>
+        <p>That comment about software highlights another thing that matters: These days, nobody in
+            their wildest dreams would consider designing a data format without also shipping
+            open-source software to do something useful with it. But <duration quantity="10"
+                unit="year">in 2008</duration>, it was pretty noteworthy that <event>by <date
+                    when="2008-02-10">February tenth</date>, there were already several
+                    <software>open-source parsers</software> available off-the-shelf</event>.</p>
+        <p>The second thing that mattered was the recognition that <catchPhrase>documents are
+                data</catchPhrase> and deserve to be treated with respect, with grown-up software,
+            just like the rows and columns in <docFormat>spreadsheets</docFormat> and
+                <software>databases</software>. <date when="2018">Today</date>, serious documents —
+                <docGenre type="medical">medical records</docGenre>, the <docGenre type="legal">Legislation of the United States of
+                America</docGenre> — live in XML and there’s really no other good choice.</p>
+        <p>Now, the mirror image of that statement is that <catchPhrase type="inverse">you can treat
+                data records as documents</catchPhrase>. People did a lot of that with
+                <codeSpec>XML</codeSpec> just because there was no other alternative and, well…
+            while it worked, you could do better, and in fact we have done better, for weak values
+            of “better”. I wonder if we’ll ever do better still? As the editor of the <codeSpec>IETF
+                JSON RFCs</codeSpec>, I’m a pessimist.</p>
+        <sectionHead>It’s been OK</sectionHead>
+        <p>Seriously; <codeSpec>XML</codeSpec> made a lot of things possible that previously
+            weren’t. It has extended the lifetime of big chunks of our intellectual and legal
+            heritage. It’s created a lot of interesting jobs and led to the production of a lot of
+            interesting software. We could have done better, but you always could have done
+            better.</p>
+        <p>
+            <event when="--02-10">Happy birthday!</event>
+        </p>
+
+    </body>
+</xml>
